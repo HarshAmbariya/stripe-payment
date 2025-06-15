@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class ProductCheckoutController {
 
 
-    private StripeService stripeService;
+    private final StripeService stripeService;
 
     public ProductCheckoutController(StripeService stripeService) {
         this.stripeService = stripeService;

@@ -72,8 +72,8 @@
     <div class="row justify-content-center">
         <!-- Product 1 -->
         <div class="col-md-4 mb-4">
-            <div class="card product-card" data-name="Smartphone" data-price="15000" data-image="smartphone.jpg">
-                <img src="smartphone.jpg" class="card-img-top product-image" alt="Smartphone">
+            <div class="card product-card" data-name="Smartphone" data-price="15000" data-image="/images/smartphone.jpg">
+                <img src="/images/smartphone.jpg" class="card-img-top product-image" alt="Smartphone">
                 <div class="card-body text-center">
                     <h5 class="product-title">Smartphone</h5>
                     <p class="product-price">Price: $150.00</p>
@@ -89,8 +89,8 @@
 
         <!-- Product 2 -->
         <div class="col-md-4 mb-4">
-            <div class="card product-card" data-name="Headphones" data-price="5000" data-image="headphones.jpg">
-                <img src="headphones.jpg" class="card-img-top product-image" alt="Headphones">
+            <div class="card product-card" data-name="Headphones" data-price="5000" data-image="/images/headphones.jpg">
+                <img src="/images/headphones.jpg" class="card-img-top product-image" alt="Headphones">
                 <div class="card-body text-center">
                     <h5 class="product-title">Headphones</h5>
                     <p class="product-price">Price: $50.00</p>
@@ -106,8 +106,8 @@
 
         <!-- Product 3 -->
         <div class="col-md-4 mb-4">
-            <div class="card product-card" data-name="Laptop" data-price="75000" data-image="laptop.jpg">
-                <img src="laptop.jpg" class="card-img-top product-image" alt="Laptop">
+            <div class="card product-card" data-name="Laptop" data-price="75000" data-image="/images/laptop.jpg">
+                <img src="/images/laptop.jpg" class="card-img-top product-image" alt="Laptop">
                 <div class="card-body text-center">
                     <h5 class="product-title">Laptop</h5>
                     <p class="product-price">Price: $750.00</p>
@@ -127,7 +127,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 <script>
-    const stripe = Stripe("STRIPE_SECRET_KEY");
+    const stripe = Stripe("PROVIDE YOUR KEY");
 
     document.querySelectorAll(".product-card").forEach(card => {
         const decrementBtn = card.querySelector(".decrement");
